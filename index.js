@@ -1,9 +1,5 @@
 var cart = [];
 
-function  getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
-}
-
 function getCart() {
  return cart;
 }
@@ -39,4 +35,13 @@ function placeOrder(cardNumber) {
 }
 
 // helper functions (looked at solution)
-function
+function  getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function generateCartItem(itemName) {
+    return {
+        itemName: itemName,
+        itemPrice: getRandomInt(1, 100)
+    }
+}
