@@ -1,7 +1,7 @@
 var cart = [];
 
 function  getRandomInt() {
-    return Math.floor(Math.random() * Math.floor(max))
+    return Math.floor(Math.random() * 100) + 1;
 }
 
 function getCart() {
