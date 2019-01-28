@@ -23,6 +23,8 @@ function viewCart() {
   } else if (cart.length === 1) {
       let oneItem = cart[0]
       return `In your cart, you have ${oneItem.itemName} at \$${oneItem.itemPrice}.`
+  } else {
+      return "empty"
   }
 }
 
