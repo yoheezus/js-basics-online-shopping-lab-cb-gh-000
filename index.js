@@ -62,4 +62,5 @@ function formatListOfThree() {
     for (let i = 0, l = cart.length; i < l, i++) {
         formattedArray.push(`${cart[i].itemName} at \$${cart[i].itemPrice}`)
     }
+    return `${baseString} ${formattedArray.join(", ")}, and ${lastItem.itemName} at /$${lastItem.itemPrice}`
 }
