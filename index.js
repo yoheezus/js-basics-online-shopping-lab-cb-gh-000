@@ -1,6 +1,6 @@
 var cart = [];
 
-function  getRandomInt(max) {
+function  getRandomInt() {
     return Math.floor(Math.random() * Math.floor(max))
 }
 
@@ -16,7 +16,7 @@ function setCart(c) {
 function addToCart(item) {
  // write your code here
  let itemName;
- itemName = Object.assign({}, {itemName: [getRandomInt(10)] })
+ itemName = Object.assign({}, {itemName: item, itemPrice: [getRandomInt()] })
  cart.push(itemName)
 }
 
