@@ -13,7 +13,7 @@ function addToCart(item) {
  // write your code here
  var anItem = generateCartItem(item);
  cart.push(anItem);
- return `${anItem["itemName"]} has been added to your cart.`
+ return `${anItem["itemName"]} has been added to your cart.`;
 }
 
 function viewCart() {
