@@ -1,7 +1,7 @@
 var cart = [];
 
-function  getRandomInt() {
-    return Math.floor(Math.random() * (100 + 1)) + 1;
+function  getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
 }
 
 function getCart() {
@@ -37,3 +37,6 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
+
+// helper functions (looked at solution)
+function
