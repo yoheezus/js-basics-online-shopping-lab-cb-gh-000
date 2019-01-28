@@ -56,7 +56,7 @@ function generateCartItem(itemName) {
 
 function formatListOfThree() {
     let lastItem = getCart().slice(-1)
-    console.log(lastItem)
+    console.log(`${lastItem}`)
     let withoutLastItem = getCart().slice(0, cart.length - 1)
     var formattedArray = []
     let baseString = "In your cart, you have"
