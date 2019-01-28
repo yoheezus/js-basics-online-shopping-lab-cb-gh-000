@@ -32,6 +32,7 @@ function viewCart() {
 
 function total() {
   // write your code here
+  for (let i = 1, l = getcart().length)
 }
 
 function removeFromCart(item) {
