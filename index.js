@@ -41,10 +41,10 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  let editableCart = getCart()
+  var editableCart;
   for (let i = 0, l = getCart().length; i < l; i++) {
       if (item === getCart()[i].itemName) {
-          return editableCart.splice(i)
+          editableCart = getCart()[i]
       }
   }
   return "That item is not in your cart."
