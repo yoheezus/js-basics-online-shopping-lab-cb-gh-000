@@ -60,6 +60,6 @@ function formatListOfThree() {
     var formattedArray = []
     let baseString = "In your cart, you have "
     for (let i = 0, l = cart.length; i < l, i++) {
-        formattedArray.push(``)
+        formattedArray.push(`${cart[i].itemName} at \$${cart[i].itemPrice}`)
     }
 }
