@@ -55,5 +55,5 @@ function generateCartItem(itemName) {
 }
 
 function formatListOfThree() {
-
+    let lastItem = cart.slice(0, cart.length - 1)
 }
