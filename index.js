@@ -58,9 +58,8 @@ function formatListOfThree() {
     let lastItem = getCart().slice(-1)[0]
     let withoutLastItem = getCart().slice(0, cart.length - 1)
     var formattedArray = []
-    let baseString = "In your cart, you have"
     for (let i = 0, l = withoutLastItem.length; i < l; i++) {
         formattedArray.push(`${withoutLastItem[i].itemName} at \$${withoutLastItem[i].itemPrice}`)
     }
-    return `${baseString} ${formattedArray.join(", ")}, and ${lastItem.itemName} at \$${lastItem.itemPrice}.`
+    return `In your cart, you have ${formattedArray.join(", ")}, and ${lastItem.itemName} at \$${lastItem.itemPrice}.`
 }
