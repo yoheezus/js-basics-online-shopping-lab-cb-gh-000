@@ -46,6 +46,7 @@ function removeFromCart(item) {
       if (item === getCart()[i].itemName) {
           editableCart = getCart()[i];
       }
+      return editableCart
   }
   return "That item is not in your cart."
 }
