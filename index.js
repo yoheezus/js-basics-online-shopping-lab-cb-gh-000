@@ -63,5 +63,5 @@ function formatListOfThree() {
     for (let i = 0, l = withoutLastItem.length; i < l; i++) {
         formattedArray.push(`${withoutLastItem[i].itemName} at \$${withoutLastItem[i].itemPrice}`)
     }
-    return `${baseString} ${formattedArray.join(", ")}, and ${lastItem.itemName} at \$${lastItem.itemPrice}`
+    return `${baseString} ${formattedArray.join(", ")}, and ${lastItem.itemName} at \$${lastItem.itemPrice}.`
 }
