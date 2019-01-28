@@ -44,7 +44,7 @@ function removeFromCart(item) {
   var editableCart;
   for (let i = 0, l = getCart().length; i < l; i++) {
       if (item === getCart()[i].itemName) {
-          editableCart = getCart()[i]
+          editableCart = getCart()[i];
       }
   }
   return "That item is not in your cart."
