@@ -55,9 +55,11 @@ function placeOrder(cardNumber) {
   var msg;
   if (cardNumber) {
       msg = `Your total cost is \$${total()}, which will be charged to the card ${cardNumber}.`
+  } else {
+      msg ="Sorry, we don't have a credit card on file for you."
   }
   setCart([])
-  msg = "Sorry, we don't have a credit card on file for you."
+  return msg
 }
 
 // helper functions (looked at solution)
