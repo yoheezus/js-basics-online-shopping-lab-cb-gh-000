@@ -11,7 +11,7 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
- var anItem = generateCartItem(item)
+ var anItem = generateCartItem(item);
  cart.push(anItem);
  return `${anItem["itemName"]} has been added to your cart.`
 }
